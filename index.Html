@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First Webpage</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: green;
+      color: white;
+      padding: 20px 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color:red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Webpage</h1>
+  </header>
+
+  <main>
+    <p>This is a simple webpage created using HTML. It includes headings, paragraphs, images, and links.</p>
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/019/799/598/small/businessman-hand-touch-with-code-html-and-programming-on-screen-laptop-programmer-development-computer-code-web-design-coding-technology-in-software-digital-software-technology-development-iot-photo.jpg" alt="Sample product or book cover" width="500" height="500"/>
+    <p>
+      Visit
+      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        Example Website
+      </a>
+      to learn more.
+    </p>
+
+    <button onclick="showMessage()">Click Me!</button>
+  </main>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for clicking the button!");
+    }
+  </script>
+</body>
+</html>
